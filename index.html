@@ -6,6 +6,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.css' integrity='sha512-VcyUgkobcyhqQl74HS1TcTMnLEfdfX6BbjhH8ZBjFU9YTwHwtoRtWSGzhpDVEJqtMlvLM2z3JIixUOu63PNCYQ==' crossorigin='anonymous'/>
   <link rel="stylesheet" href="./css/style.css">
   <title>Our Team</title>
 </head>
@@ -17,7 +18,31 @@
         <h1>Meet our Team</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio ad, nemo veniam iure magnam facilis quaerat id hic fuga, inventore consequuntur provident perspiciatis temporibus aliquid modi magni minus dolor?</p>
       </div>
-      <div class="cards-container"></div>
+      <div class="cards-container flex wrap">
+
+      </div>
+      <form action="#" class="my-5">
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Nome e Cognome</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Ruolo ricoperto</label>
+              <input type="text" class="form-control" id="role">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">E-mail</label>
+              <input type="text" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+              <label for="src" class="form-label">La tua immagine</label>
+              <input type="text" class="form-control" id="img">
+            </div>
+
+          <div class="button py-3 d-grid">
+            <button class="btn btn-primary" type="submit">Invia</button>
+          </div>
+      </form>
     </div>
   </main>
   <script src="./js/script.js"></script>
