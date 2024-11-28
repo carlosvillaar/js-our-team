@@ -24,6 +24,10 @@
   background-color: black;
 }
 
+.c-azure{
+  color: #1880BD;
+}
+
 body{
   font-family: fredoka, sans-serif;
 }
@@ -74,3 +78,5 @@ main img{
   margin-left: 20px;
   line-height: 40px;
 }
+
+
