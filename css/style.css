@@ -73,14 +73,17 @@ main .cards-container{
 }
 
 main img{
-  height: 120px;
-  width: 120px;
+  height: 160px;
+  width: 160px;
 }
 
 .card-text{
   color: white;
   margin-left: 20px;
-  line-height: 40px;
+  line-height: 30px;
 }
 
-
+h2{
+  padding-bottom: 10px;
+  padding-top: 12px;
+}
