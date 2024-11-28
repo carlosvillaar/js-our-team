@@ -43,16 +43,42 @@ for (let member of teamMembers){
   const {name, role, email, img} = member;
   
   const card = `<div class="col flex bg-black align-center">
-                      <div class="img flex">
-                        <img src="./assets/${img}" alt="${name}">
-                      /div>
-                    <div class="card-text">
-                      <h2 class="fullname">${name}</h2>
-                      <p class="role">${role}</p>
-                      <p class="email c-azure">${email}</p>
-                    </div>
-                  </div>`
+                        <img src="./assets/${img}" alt="${name}" class:"flex">
+                      <div class="card-text">
+                        <h2 class="fullname">${name}</h2>
+                        <p class="role">${role}</p>
+                        <p class="email c-azure">${email}</p>
+                      </div>
+                </div>`
   
 document.querySelector('.cards-container').innerHTML += card;
+
 }
 
+
+/*const button = document.getElementById('submit');
+
+button.addEventListener('click', (event) => {
+  event.preventDefault;
+  
+  const newMember = {
+    name: document.getElementById('name').value,
+    role: document.getElementById('role').value,
+    email: document.getElementById('email').value,
+    img: document.getElementById('img').value
+  };
+  
+})
+
+function addNewObject(array, object) {
+  array.push(object);
+}*/
+/*const button = document.getElementById('submit');
+const input = document.querySelectorAll('input');
+
+button.addEventListener('click', (event) => {
+  event.preventDefault;
+  for (let i = 0; i < input.length; i++){
+    input[i].value
+  }
+})*/
