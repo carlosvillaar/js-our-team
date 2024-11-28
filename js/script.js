@@ -36,3 +36,24 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+
+for (let member of teamMembers){
+  const {name, role, email, img} = member;
+  
+  const card = `<div class="row flex">
+                  <div class="col flex bg-black align-center">
+                      <div class="img">
+                        <img src="./assets/${member.img}" alt="${member.name}">
+                      /div>
+                    <div class="card-text">
+                      <h2 class="fullname">${member.name}</h2>
+                      <p class="role">${member.role}</p>
+                      <p class="email c-azure">${member.email}</p>
+                    </div>
+                  </div>
+                </div>`;
+  
+  
+document.querySelector('.cards-container').innerHTML += card;
+}
