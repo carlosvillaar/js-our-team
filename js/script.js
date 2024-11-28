@@ -39,21 +39,20 @@ const teamMembers = [
 
 
 for (let member of teamMembers){
+
   const {name, role, email, img} = member;
   
-  const card = `<div class="row flex">
-                  <div class="col flex bg-black align-center">
-                      <div class="img">
-                        <img src="./assets/${member.img}" alt="${member.name}">
+  const card = `<div class="col flex bg-black align-center">
+                      <div class="img flex">
+                        <img src="./assets/${img}" alt="${name}">
                       /div>
                     <div class="card-text">
-                      <h2 class="fullname">${member.name}</h2>
-                      <p class="role">${member.role}</p>
-                      <p class="email c-azure">${member.email}</p>
+                      <h2 class="fullname">${name}</h2>
+                      <p class="role">${role}</p>
+                      <p class="email c-azure">${email}</p>
                     </div>
-                  </div>
-                </div>`;
-  
+                  </div>`
   
 document.querySelector('.cards-container').innerHTML += card;
 }
+
