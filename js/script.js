@@ -37,11 +37,9 @@ const teamMembers = [
   }
 ];
 
-
+function renderCards(){
 for (let member of teamMembers){
-
   const {name, role, email, img} = member;
-  
   const card = `<div class="col flex bg-black align-center">
                         <img src="./assets/${img}" alt="${name}" class:"flex">
                       <div class="card-text">
@@ -50,35 +48,24 @@ for (let member of teamMembers){
                         <p class="email c-azure">${email}</p>
                       </div>
                 </div>`
-  
 document.querySelector('.cards-container').innerHTML += card;
-
+}
 }
 
-
-/*const button = document.getElementById('submit');
+renderCards()
+const button = document.getElementById('submit');
 
 button.addEventListener('click', (event) => {
-  event.preventDefault;
-  
+  event.preventDefault();
+
   const newMember = {
     name: document.getElementById('name').value,
     role: document.getElementById('role').value,
     email: document.getElementById('email').value,
     img: document.getElementById('img').value
   };
-  
+  addNewObject(teamMembers, newMember);
 })
-
 function addNewObject(array, object) {
   array.push(object);
-}*/
-/*const button = document.getElementById('submit');
-const input = document.querySelectorAll('input');
-
-button.addEventListener('click', (event) => {
-  event.preventDefault;
-  for (let i = 0; i < input.length; i++){
-    input[i].value
-  }
-})*/
+}
